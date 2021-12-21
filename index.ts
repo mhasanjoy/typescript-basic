@@ -1,11 +1,11 @@
 // any, string, number, boolean, tuple, undefined, null, void, never, unknown
-const myName = "Md. Mehedi Hasan";
-let age: number = 25;
+const myName = "Md. Mehedi Hasan"; // type inference
+let age: number = 25; // type annotation
 let isHungry: boolean = true;
 
 // type alias
-type NumberOrString = number | string;
-let studentId: NumberOrString = 232;
+type StringOrNumber = number | string;
+let studentId: StringOrNumber = 232;
 studentId = "web3-0232";
 
 // literal type

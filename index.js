@@ -1,7 +1,7 @@
 "use strict";
 // any, string, number, boolean, tuple, undefined, null, void, never, unknown
-const myName = "Md. Mehedi Hasan";
-let age = 25;
+const myName = "Md. Mehedi Hasan"; // type inference
+let age = 25; // type annotation
 let isHungry = true;
 let studentId = 232;
 studentId = "web3-0232";
