@@ -9,13 +9,26 @@ class BankAccount {
     this._balance = balance;
   }
 
-  getBalance() {
-    console.log(`My current balance is ${this._balance}`);
+  private getBalance(): number {
+    return this._balance;
   }
-  addDeposit(amount: number) {
+  get testBalance(): number {
+    return this.getBalance();
+  }
+  // getter
+  get balance(): number {
+    return this._balance;
+  }
+
+  // addDeposit(amount: number):void {
+  //   this._balance = this._balance + amount;
+  // }
+  // setter
+  set deposit(amount: number) {
     this._balance = this._balance + amount;
   }
 }
+
 const myAccount = new BankAccount(13, "Joy", 0.5);
 console.log(myAccount);
 
@@ -24,3 +37,7 @@ class StudentAccount extends BankAccount {
     this.name = "Md. Mehedi Hasan";
   }
 }
+
+console.log(myAccount.balance);
+myAccount.deposit = 25000;
+console.log(myAccount);
