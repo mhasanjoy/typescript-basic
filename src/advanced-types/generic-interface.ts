@@ -26,11 +26,11 @@ const crush3: ICrush<IHusband> = {
   },
 };
 
-interface IPerson {
+interface IPerson1 {
   name: string;
   age: number;
 }
-const crush4: ICrush<IPerson, IPerson> = {
+const crush4: ICrush<IPerson1, IPerson1> = {
   name: "Aditi Rao Hydari",
   husband: {
     name: "Joy",
